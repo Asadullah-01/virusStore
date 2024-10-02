@@ -1,0 +1,41 @@
+.offer{
+    background: url("../../Assets/wallpaperflare.com_wallpaper (22).jpg");
+    display:flex;
+    margin:auto;
+    height:80vh;
+    margin: 50px;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.offer h1{
+    display: flex;
+    justify-content: end;
+    margin: 60px 140px 0px 0px;
+
+}
+.offer-logo{
+    margin: 30px 10px 0px 550px;
+    align-items: center;
+}
+.offer-logo img {
+     width: 500px;  /* Set the desired width */
+     height: auto;  /* Maintain the aspect ratio of the image */
+     object-fit: contain; /* Ensure the image fits within the dimensions without distortion */
+     margin: 0 auto; /* Center the image */
+     display: block; /* Ensure the image behaves like a block element */
+     border-radius: 0px;
+ }
+.offer-logo button {
+    margin: 30px 10px 0px 230px;
+    background-color: #211951;
+    color: #AEB7B3;
+}
+.offer hr{
+    width: 520px; /* Adjust the width of the hr */
+    height: 3px; /* Adjust the height of the hr */
+    background-color: #AEB7B3; /* Set hr color */
+    border: none; /* Remove default border */
+    margin: 20px 0px 0px 580px; /* Add margin to give space between h1 and the hr */
+
+}
+

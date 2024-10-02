@@ -1,0 +1,43 @@
+.company-container{
+    display: flex;
+    background-image: url("../../Assets/wallpaperflare.com_wallpaper (27).jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+.company-container::before{
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Cover the entire container */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.5);
+    z-index: 1;
+}
+
+.company {
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    z-index: 1;
+}
+
+.company h1, .company h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.company p, .company ul {
+    margin-bottom: 30px;
+}
+
+.company ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.company ul li {
+    margin-bottom: 10px;
+}

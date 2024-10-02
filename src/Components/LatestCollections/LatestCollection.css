@@ -1,0 +1,34 @@
+.LatestCollection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.LatestCollection hr {
+    width: 80%;
+    height: 2px;
+    border-radius: 10px;
+    background: #252525;
+}
+.Latest-game-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 30px;
+    padding: 60px;
+    margin-top: 50px;
+}
+.Latest-game-card{
+    background-color: #1c1c1c; /* Dark background for contrast */
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center the text and image */
+    height: 370px;
+}
+.Latest-game-image{
+    height: 220px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}

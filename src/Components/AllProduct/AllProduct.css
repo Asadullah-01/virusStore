@@ -1,0 +1,93 @@
+.all-game-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: url("../../Assets/cod-bg2.jpg");
+}
+.all-game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+    gap: 30px; /* Space between the cards */
+    padding: 30px;
+    margin-top: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.all-game-card {
+    background-color: #1c1c1c; /* Dark background for contrast */
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,  z-index 0.3s ease, background-color 0.3s ease;
+    text-align: center; /* Center the text and image */
+    height: 270px;
+    z-index: 0;
+    overflow: hidden; /* To prevent overflow from enlarged elements */
+    background-size: cover; /* Ensures background covers the card */
+    background-position: center;
+}
+.all-game-card:hover {
+    transform: scale(1.2); /* Enlarge the entire card */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); /* Bigger shadow effect */
+    z-index: 10; /* Bring the card in front of others */
+    background-color: #262626; /* Change background color on hover */
+    background-size: 120%; /* Background grows slightly */
+}
+.all-game-image{
+    height: 150px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.all-game-card:hover .all-game-image {
+    transform: scale(1.3); /* Move the text up slightly */
+}
+.all-game-card h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #AEB7B3;
+}
+
+/* Game Price Styling */
+.all-game-card p {
+    font-size: 16px;
+    color: #AEB7B3;
+}
+
+.all-game-card:hover h2 {
+    font-size: 22px; /* Increase font size on hover */
+    transform: translateY(-10px); /* Move the text up slightly */
+}
+
+/* Hover effect for the price */
+.all-game-card:hover p {
+    font-size: 18px; /* Increase font size on hover */
+    transform: translateY(5px); /* Move the text down slightly */
+}
+.all-game-card,
+.all-game-image,
+h2,
+p {
+    transition: transform 0.3s ease, z-index 0.3s ease, font-size 0.3s ease;
+}
+
+
+@media (max-width: 1024px) {
+    .all-game-grid {
+        grid-template-columns: repeat(3, 1fr); /* Show 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .all-game-grid {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .all-game-grid {
+        grid-template-columns: 1fr; /* Show 1 column on very small screens */
+    }
+}
